@@ -12,58 +12,11 @@
 			<h3>This is the caption of the photo. There are a bunch of people, including C. Paladino, sitting around a table talking about education. (Photo: George Clooney)</h3>
 		</div>
 
-		<div class="article-data">
-			<ul>
-				<li class="author">
-					By <span class="name">Mark Gaughan</span>
-				</li>
-
-				<li class="contact">
-					<a href="#"><span class="email-icon"></span></a>
-					<a href="#"><span class="twitter-icon"></span></a>
-				</li>
-				
-				<li class="author">
-					By <span class="name">Mark Gaughan</span>
-				</li>
-
-				<li class="contact">
-					<a href="#"><span class="email-icon"></span></a>
-					<a href="#"><span class="twitter-icon"></span></a>
-				</li>
-
-				<li class="updated">
-					<p>updated 9:29 AM EST, Tuesday December 30, 2014</p>
-				</li>
-			</ul>
-		</div>
+		<?php include(dirname(__FILE__).'/../components/article/article-data.php'); ?>
 
 		<div class="article-content-container">
-			<div class="socmed-util">
-				<ul>
-					<li class="mail">
-						
-					</li>
-					<li class="facebook">
-						
-					</li>
-					<li class="twitter">
-						
-					</li>
-					<li class="google">
-						
-					</li>
-					<li class="reddit">
-						
-					</li>
-					<li class="linkedin">
-						
-					</li>
-					<li class="more">
-						
-					</li>
-				</ul>
-			</div>
+
+			<?php include(dirname(__FILE__).'/../components/article/socmed-util.php'); ?>
 
 			<div class="article-content">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloribus soluta esse consectetur, voluptatem, aspernatur aperiam quaerat itaque ut dicta veniam! Doloremque quibusdam dolorem earum eum. Unde, illo saepe quisquam.</p>
@@ -89,42 +42,28 @@
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quae corrupti ullam odit. Eos repudiandae vel temporibus quisquam fugit sunt, quas alias. Doloremque beatae illo, quas officia nisi voluptate consequuntur!</p>
 				
-				<div class="content-with-related-story-widget">
-					<div class="content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit omnis minus nam natus sequi optio ea, fugiat veritatis, assumenda accusantium ab magni, mollitia voluptatem quisquam nobis beatae excepturi! Optio, iste?</p>
-						
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium explicabo illo quasi, quisquam, aliquid libero impedit cumque? Ipsum, eum, quibusdam, ut pariatur doloribus labore fugit, culpa aliquid illum nesciunt laboriosam.</p>
+				<?php include(dirname(__FILE__).'/../components/article/content-with-related-story-widget.php'); ?>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur veritatis officia aut et at distinctio, dolor temporibus minus laudantium velit, est incidunt vitae vero. Blanditiis sit labore ad dolore.</p>
-					
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod omnis, quia saepe nemo dolores nihil velit error minima inventore sed, unde, quas perspiciatis ducimus odit expedita voluptate veniam et.</p>
-					</div>
-					
-					<div class="related-stories-widget">
-						<div class="wrapper">
-							<h3>More related to this story</h3>
-							
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam et impedit accusantium eos ullam dolore molestiae, at maiores vitae eius, perferendis amet mollitia inventore. Excepturi sequi corporis, quod dicta nemo.</p>
 
-							<ul class="related-stories">
-								<li class="main">
-									<div class="img-container">
-										<img src="#" alt="">
-									</div>
-									
-									<h4>New Board looks to Ogilive to reset  district's course</h4>	
-								</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat at, quas dicta vel dignissimos quam voluptatum ipsa, molestias reiciendis officiis quaerat culpa dolorum inventore dolore voluptatem fugit optio incidunt exercitationem.</p>
 
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias labore, neque quidem et sint nesciunt repudiandae blanditiis veritatis adipisci. Ratione eligendi quidem aliquam expedita reiciendis delectus suscipit, non, autem?</li>
+				<?php include(dirname(__FILE__).'/../components/article/content-with-quote-widget.php'); ?>
 
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem similique consequatur nulla quaerat error ducimus earum atque cum possimus laborum, dolor aspernatur ad ea. Ea veritatis, cumque assumenda corrupti suscipit!</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit velit iste, deserunt, quia eum perferendis sapiente molestias. Eos voluptate minus, quos fuga, a, doloremque aperiam ipsa, eum quas nesciunt qui.</p>
 
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolore minima quaerat alias debitis repudiandae similique, minus ullam accusamus, quod consectetur itaque pariatur, amet magni optio soluta sunt veritatis nobis!</li>
-							</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officiis consequuntur, nam nesciunt, sapiente totam impedit maxime repellat delectus dolore quidem, iure sed natus quisquam inventore eum esse distinctio explicabo.</p>
 
-						</div>
-					</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quibusdam error facilis illo? Necessitatibus accusamus, deserunt quibusdam ut quas voluptas, itaque inventore, beatae suscipit magni odio! Quasi sint, modi quaerat.</p>
 
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur perferendis quaerat iure ratione neque necessitatibus, distinctio, dignissimos accusamus fugiat alias impedit ut, maiores porro ad. Odio temporibus, perferendis quas!</p>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum blanditiis doloremque, natus perspiciatis soluta error fugit ad nihil placeat expedita, iusto, beatae. Tempora cum ad corporis, harum cupiditate eligendi.</p>
+
+				<div id="disqus">
+					<h2>Disqus here</h2>
 				</div>
+
 			</div>
 		</div>
 

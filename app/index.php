@@ -9,21 +9,16 @@
     </head>
 
     <body>
+        
         <?php include(dirname(__FILE__).'/includes/layouts/header.php'); ?>
 
         <div class="wrapper">
-            <div class="hero-unit">
-                <h1 class="">'Allo, 'Allo!</h1>
-                <p>You now have</p>
-                <ul>
-                    <li>HTML5 Boilerplate</li>
-                    <li>RequireJS</li>
-                </ul>
-                <p>installed.</p>
-                <h3>Enjoy coding!</h3>
-            </div>            
-        </div>
 
+            <?php include(dirname(__FILE__).'/includes/layouts/main.php'); ?>
+
+            <?php include(dirname(__FILE__).'/includes/layouts/right-rail.php'); ?>
+          
+        </div>
 
         <?php include(dirname(__FILE__).'/includes/layouts/footer.php'); ?>
 
