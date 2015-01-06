@@ -7,7 +7,8 @@ var require = {
         component: '../scripts/component',
         library: '../scripts/library',
         jquery: 'jquery/dist/jquery',
-        loglevel: 'loglevel/dist/loglevel.min'
+        loglevel: 'loglevel/dist/loglevel.min',
+        picturefill: 'picturefill/dist/picturefill'
     },
     shim: {
 
