@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/**/*.php',
                     '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
                     '{.tmp,<%= yeoman.app %>}/styles/**/*.css',
-                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                    '<%= yeoman.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
         },
@@ -248,7 +248,7 @@ module.exports = function (grunt) {
         processhtml: {
             dist: {
                 files: [
-                    {expand: true, cwd: yeomanConfig.app, src: ['**/*.php', '!bower_components/**/*.php'], dest: '.tmp'}
+                    {expand: true, cwd: '.tmp', src: ['**/*.html', '!bower_components/**/*.html'], dest: '.tmp'}
                 ]
             }
         },
@@ -262,15 +262,15 @@ module.exports = function (grunt) {
                     }
                 }
             },
-            html: ['.tmp/**/*.php', '!bower_components/**/*.php']
+            html: ['.tmp/**/*.html', '!.tmp/includes/**/*.html', '!bower_components/**/*.html']
         },
         usemin: {
             options: {
                 dirs: ['<%= yeoman.dist %>'],
                 assetsDirs: ['<%= yeoman.dist %>']
             },
-            html: ['<%= yeoman.dist %>/**/*.php'],
-            css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
+            html: ['<%= yeoman.dist %>/**/*.html'],
+            css: ['<%= yeoman.dist %>/styles/**/*.css']
         },
         imagemin: {
             dist: {
@@ -317,8 +317,8 @@ module.exports = function (grunt) {
             all: {
                 expand: true,
                 cwd: '<%= yeoman.dist %>',
-                ext: '.php',
-                src: ['**/*.php'],
+                ext: '.html',
+                src: ['**/*.html'],
                 dest: '<%= yeoman.dist %>'
             }
         },
@@ -367,7 +367,7 @@ module.exports = function (grunt) {
                     cwd: '.tmp',
                     dest: '<%= yeoman.dist %>',
                     src: [
-                        '**/*.php'
+                        '**/*.html'
                     ]
                 }, {
                     expand: true,
@@ -410,7 +410,7 @@ module.exports = function (grunt) {
                 path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.php'
             },
             dist: {
-                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.php'
+                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.html'
             },
             report: {
                 path: 'docs/complexity/index.html'
@@ -452,9 +452,6 @@ module.exports = function (grunt) {
                 options: {
                     middleware: function (connect) {
                         return [
-                            gateway(__dirname + path.sep + yeomanConfig.dist, {
-                                '.php': 'php-cgi'
-                            }),
                             mountFolder(connect, yeomanConfig.dist)
                         ];
                     }
@@ -521,7 +518,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'bower',
-		    'test',
+            'test',
         'php2html',
         'copy:prepare',
         'processhtml',
@@ -538,7 +535,8 @@ module.exports = function (grunt) {
         'cssmin:dist',
         'rev',
         'usemin',
-        'prettify'
+        'prettify',
+        'htmlmin'
     ]);
 
     grunt.registerTask('report', [
