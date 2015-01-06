@@ -1,4 +1,13 @@
+app
 node_modules
 .tmp
 .sass-cache
-app/bower_components
+.editorconfig
+.gitattributes
+.gitignore
+.jshintsrc
+.prettifyrc
+.yo-rc.json
+bower.json
+Gruntfile.js
+package.json
