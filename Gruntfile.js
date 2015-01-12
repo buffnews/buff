@@ -257,7 +257,7 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>',
                 flow: {
                     html: {
-                        steps: { 'js': ['concat', 'uglifyjs'], 'css': []},
+                        steps: { 'js': ['concat'], 'css': ['concat']},
                         post: {}
                     }
                 }
@@ -528,15 +528,15 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'requirejs',
-        'modernizr',
-        'uglify',
+        //'modernizr',
+        //'uglify',
         'copy:dist',
         'uglify',
         'cssmin:dist',
         'rev',
         'usemin',
-        'prettify',
-        'htmlmin'
+        'prettify'
+        //'htmlmin'
     ]);
 
     grunt.registerTask('report', [

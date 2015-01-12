@@ -15,7 +15,6 @@
 		<?php include(dirname(__FILE__).'/../components/article/article-data.php'); ?>
 
 		<div class="article-content-container">
-
 			<?php include(dirname(__FILE__).'/../components/article/socmed-util.php'); ?>
 
 			<div class="article-content">
@@ -63,10 +62,7 @@
 				<div id="disqus">
 					<h2>Disqus here</h2>
 				</div>
-
 			</div>
 		</div>
-
-
 	</article>
 </div>

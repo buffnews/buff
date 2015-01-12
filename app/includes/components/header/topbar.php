@@ -7,9 +7,7 @@
 		</div>
 
 		<div class="logo">
-			<h1>
-				<a href="#">The Buffalo News</a>
-			</h1>
+			<h1><a href="#">The Buffalo News</a></h1>
 		</div>
 
 		<div class="date-util">
