@@ -1,0 +1,32 @@
+.article-data {
+	border-top: 1px solid $rule;
+	border-bottom: 1px solid $rule;
+	margin: 20px 0;
+	padding: 10px 0;
+	li {
+		display: inline-block;
+		& > * {
+			display: inline-block;
+		}
+		.author-name {
+			@include font($default, $med, 25px, $listitem);
+			.name {
+				margin-right: 20px;
+				color: $black;
+			}
+		}
+		.connect {
+			a {
+				color: $darkgrey;
+				&:first-child { margin: 0 5px 0 0; }
+			}
+			&:after {
+				content: ','
+			}
+		}
+		&.updated {
+			@include font($default, $smaller, 20px, $listitem);
+			margin: 0 0 0 15px;
+		}
+	}
+}

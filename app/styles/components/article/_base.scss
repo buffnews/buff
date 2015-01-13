@@ -1,0 +1,24 @@
+.article-title {
+	margin: 0 0 15px;
+	h2 {
+		@include font($miller-bold, $biggest, 50px, $black);
+	}
+}
+
+.article-image-main {
+	img { width: 100%; }
+}
+
+.article-image-main-caption {
+	margin: 5px 0 10px;
+	h3 {
+		@include font(Arial, $small, 20px, $caption);
+	}
+}
+
+.article-content {
+	@include span-columns(9);
+	p {
+		margin: 0 0 23px;
+	}
+}

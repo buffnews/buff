@@ -1,0 +1,50 @@
+#recent-stories-carousel {
+    overflow: auto;
+    border-bottom: 1px solid $lightgrey;
+    background: $lightgrey;
+    .wrapper {
+        background: $white;
+        padding: 15px;
+        position: relative;
+    }
+    li {
+        @include span-columns(3);
+        border-right: 1px solid $lightgrey;
+        &:last-child {
+            border-right: 0;
+        }
+        .img-container {
+            @include span-columns(5);
+            height: 78px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .summary {
+            @include span-columns(7);
+            font-size: $reg;
+            color: $text;
+            padding: 0 5px 0 0;
+        }
+    }
+    .prev, .next {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 40px;
+        cursor: pointer;
+        i {
+            color: $grey;
+            font-size: 30px;
+        }
+    }
+    .prev {
+        left: -40px;
+    }
+    .next {
+        right: -50px;
+    }
+}
+

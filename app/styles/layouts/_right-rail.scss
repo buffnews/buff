@@ -1,0 +1,4 @@
+#right-rail {
+	@include span-columns(3);
+	@include shift(.2);
+}

@@ -173,23 +173,6 @@ module.exports = function (grunt) {
                 rjsConfig: '<%= yeoman.app %>/scripts/config.js'
             }
         },
-        requirejs: {
-            all: {
-                // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
-                options: {
-                    baseUrl                 : '<%= yeoman.app %>/bower_components',
-                    name                    : 'almond/almond',
-                    include                 : 'main',
-                    out                     : '<%= yeoman.dist %>/scripts/main.js',
-                    mainConfigFile          : '<%= yeoman.app %>/scripts/config.js',
-                    preserveLicenseComments : false,
-                    useStrict               : true,
-                    wrap                    : true,
-                    optimize                : 'uglify2',
-                    generateSourceMaps      : true
-                }
-            }
-        },
         modernizr: {
             dist: {
                 // [REQUIRED] Path to the build you're using for development.
@@ -527,7 +510,6 @@ module.exports = function (grunt) {
         'uncss',
         'autoprefixer',
         'concat',
-        'requirejs',
         //'modernizr',
         //'uglify',
         'copy:dist',

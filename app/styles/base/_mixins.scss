@@ -1,0 +1,14 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font($family, $size, $line-height, $color) {
+	font-family: $family;
+	font-size: $size;
+	line-height: $line-height;
+	color: $color;
+}

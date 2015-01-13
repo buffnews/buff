@@ -1,21 +1,23 @@
 		<div class="article-data">
 			<ul>
 				<li class="author">
-					By <span class="name">Mark Gaughan</span>
+					<div class="author-name">
+						By <span class="name">Mark Gaughan</span>
+					</div>
+					<div class="connect">
+						<a href="#"><span class="fa fa-envelope"></span></a>
+						<a href="#"><span class="fa fa-twitter"></span></a>
+					</div>
 				</li>
 
-				<li class="contact">
-					<a href="#"><span class="email-icon"></span></a>
-					<a href="#"><span class="twitter-icon"></span></a>
-				</li>
-				
 				<li class="author">
-					By <span class="name">Mark Gaughan</span>
-				</li>
-
-				<li class="contact">
-					<a href="#"><span class="email-icon"></span></a>
-					<a href="#"><span class="twitter-icon"></span></a>
+					<div class="author-name">
+						By <span class="name">Mark Gaughan</span>
+					</div>
+					<div class="connect">
+						<a href="#"><span class="fa fa-envelope"></span></a>
+						<a href="#"><span class="fa fa-twitter"></span></a>
+					</div>
 				</li>
 
 				<li class="updated">

@@ -1,0 +1,24 @@
+.socmed-util {
+	@include span-columns(1);
+	border-top: 5px solid $soc-border;
+	border-bottom: 5px solid $soc-border;
+	li {
+		display: block;
+		border: 1px solid $soc-border;
+		border-bottom: 0;
+		text-align: center;
+		padding: 12px 0;
+		font-size: 20px;
+
+		&.mail { color: $mail; }
+		&.facebook { color: $facebook; }
+		&.twitter { color: $twitter; }
+		&.google { color: $google; }
+		&.reddit { color: $reddit; }
+		&.linkedin { color: $linkedin; }
+
+		&:last-child {
+			line-height: 25px;
+		}
+	}
+}

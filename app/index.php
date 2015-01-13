@@ -14,7 +14,7 @@
 
         <div class="wrapper">
 
-            <?php include(dirname(__FILE__).'/includes/layouts/main.php'); ?>
+            <?php include(dirname(__FILE__).'/includes/layouts/article.php'); ?>
 
             <?php include(dirname(__FILE__).'/includes/layouts/right-rail.php'); ?>
           

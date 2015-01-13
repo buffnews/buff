@@ -3,7 +3,7 @@
 		<ul>
 			<li>
 				<div class="img-container">
-					<img src="#" alt="">
+					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
 					<p>Buffalo School Board OKs hiring of to review district</p>
@@ -12,7 +12,7 @@
 
 			<li>
 				<div class="img-container">
-					<img src="#" alt="">
+					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
 					<p>Buffalo School Board OKs hiring of to review district</p>
@@ -21,7 +21,7 @@
 
 			<li>
 				<div class="img-container">
-					<img src="#" alt="">
+					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
 					<p>Buffalo School Board OKs hiring of to review district</p>
@@ -30,7 +30,7 @@
 
 			<li>
 				<div class="img-container">
-					<img src="#" alt="">
+					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
 					<p>Buffalo School Board OKs hiring of to review district</p>
@@ -38,7 +38,7 @@
 			</li>
 		</ul>
 
-		<div class="prev"></div>
-		<div class="next"></div>
+		<div class="prev"><i class="fa fa-chevron-left"></i></div>
+		<div class="next"><i class="fa fa-chevron-right"></i></div>
 	</div>
 </div>
