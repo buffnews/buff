@@ -8,6 +8,6 @@
 </script>
 
         <!-- build:js scripts/main.js -->
-<script data-main="main" src="scripts/config.js"></script>
-<script data-main="main" src="bower_components/requirejs/require.js"></script>
+<script data-main="main" src="bower_components/jquery/dist/jquery.js"></script>
+<script data-main="main" src="scripts/main.js"></script>
         <!-- /build -->

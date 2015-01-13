@@ -5,7 +5,7 @@
 		</div>
 
 		<div class="article-image-main">
-			<img src="../../images/article-main-photo.jpg" alt="">
+			<img src="images/article-main-photo.jpg" alt="">
 		</div>
 
 		<div class="article-image-main-caption">
@@ -27,7 +27,7 @@
 				<div class="article-image">
 
 					<div class="article-image-container">
-						<img src="../../images/article-md-photo.jpg" alt="">
+						<img src="images/article-md-photo.jpg" alt="">
 					</div>
 
 					<div class="article-image-caption">
