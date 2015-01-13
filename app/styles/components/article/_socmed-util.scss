@@ -1,15 +1,20 @@
 .socmed-util {
 	@include span-columns(1);
+	@include animated(.2s);
+	top: 0;
+	width: 57px;
 	border-top: 5px solid $soc-border;
 	border-bottom: 5px solid $soc-border;
 	li {
+		@include animated(.2s);
 		display: block;
 		border: 1px solid $soc-border;
 		border-bottom: 0;
 		text-align: center;
 		padding: 12px 0;
 		font-size: 20px;
-
+		cursor: pointer;
+		
 		&.mail { color: $mail; }
 		&.facebook { color: $facebook; }
 		&.twitter { color: $twitter; }
@@ -20,5 +25,11 @@
 		&:last-child {
 			line-height: 25px;
 		}
+		&:hover { font-size: 23px; }
+	}
+	&.fix {
+	    position:fixed;
+	    top: 129px;
+	    width: 57px;
 	}
 }

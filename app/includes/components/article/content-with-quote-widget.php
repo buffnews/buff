@@ -6,6 +6,6 @@
 					</div>
 
 					<div class="quote-widget">
-						<h2>That's going to need some real work and effort</h2>
+						<h2>"That's going to need some real work and effort"</h2>
 					</div>
 				</div>

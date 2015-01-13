@@ -10,7 +10,7 @@
 <script src="bower_components/modernizr/modernizr.js"></script>
 <!-- endbuild -->
 
-<script type="text/javascript" src="../scripts/fontsmoothie.min.js" async></script>
+<script type="text/javascript" src="scripts/fontsmoothie.min.js" async></script>
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 

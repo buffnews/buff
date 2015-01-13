@@ -12,3 +12,34 @@
 	line-height: $line-height;
 	color: $color;
 }
+
+// images
+@mixin background($path, $width, $height) {
+  background: transparent url('../images/' + $path + '.png') 0 0 no-repeat;
+  width: $width;
+  height: $height;
+}
+
+@mixin image-link($width: inherit, $height: inherit) {
+  display: block;
+  width: $width;
+  height: $height;
+  text-indent: -8400px;
+}
+
+// animations
+@mixin animated($speed) {
+    transition: All $speed ease-in-out;
+    -webkit-transition: All $speed ease-in-out;
+    -moz-transition: All $speed ease-in-out;
+    -o-transition: All $speed ease-in-out;
+}
+
+// Vertical Align
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

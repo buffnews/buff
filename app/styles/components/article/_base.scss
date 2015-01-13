@@ -9,6 +9,16 @@
 	img { width: 100%; }
 }
 
+.article-image {
+	margin: 50px 0 30px;
+	img { width: 100%; }
+	.article-image-caption {
+		border-bottom: 1px solid $rule;
+		@include font($default, $smaller, 20px, $caption);
+		& > * { margin-bottom: 10px; }
+	}
+}
+
 .article-image-main-caption {
 	margin: 5px 0 10px;
 	h3 {
@@ -20,5 +30,8 @@
 	@include span-columns(9);
 	p {
 		margin: 0 0 23px;
+	}
+	&.fixed-socmed {
+		margin-left: 78px;
 	}
 }
