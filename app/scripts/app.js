@@ -9,7 +9,8 @@ define(function (require) {
         self = {};
 
 
-    components.dummy = require('component/dummy');
+    components.fixSocMedUtil = require('component/fixSocMedUtil');
+    components.dropdown = require('component/dropdown');
 
     // API methods
     $.extend(self, {

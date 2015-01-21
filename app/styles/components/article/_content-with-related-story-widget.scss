@@ -1,8 +1,14 @@
 .content-with-related-story-widget {
 	width: 123%;
 	@include clearfix;
+	@include max-screen($desktop) {
+		width: 100%;
+	}
 	.content {
 		@include span-columns(7);
+		@include max-screen($desktop) {
+			@include span-columns(12);
+		}
 	}
 	.related-stories-widget {
 		@include span-columns(4.7);
@@ -11,6 +17,13 @@
 		margin-bottom: 30px;
 		border-top: 5px solid $thick-border;
 		border-bottom: 5px solid $thick-border;
+		@include max-screen($desktop) {
+			@include span-columns(12);
+			@include shift(0);
+			background: transparent;
+			border-top: 1px solid $thick-border;
+			border-bottom: 1px solid $thick-border;
+		}
 		.wrapper {
 			padding: 20px;
 		}
@@ -20,8 +33,14 @@
 		}
 		.featured {
 			margin: 0 0 10px;
+			@include max-screen($desktop) {
+				margin: 20px 0;
+			}
 			img {
 				width: 100%;
+				@include max-screen($desktop) {
+					display: none;
+				}
 			}
 			h4 {
 				@include font($miller-bold, $bigger, 28px, $black);

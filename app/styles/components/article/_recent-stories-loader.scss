@@ -1,0 +1,124 @@
+#recent-stories-loader {
+	background: $block-bg;
+	clear: both;
+	margin: 30px 0 0;
+	.wrapper {
+		padding: 20px 0;
+	}
+
+	.user-controls {
+		margin: 0 0 13px;
+		.wrapper {
+			max-width: 500px;
+		}
+
+		.most-recent {
+			@include span-columns(5.8);
+		}
+		.all-sections {
+			@include shift(.4);
+			@include span-columns(5.8);
+		}
+
+		.dropdown {
+			position: relative;
+			z-index: 1;
+			.dropdown-btn {
+				display: block;
+				cursor: pointer;
+				background: $white;
+				border-radius: 4px;
+				border: 1px solid $soc-border;
+				position: relative;
+				z-index: 2;
+				span {
+					display: block;
+					padding: 8px 0 8px 15px;
+					@include font($lora, $reg, $reg, $text);
+					position: relative;
+					i {
+						@include animated(.5s);
+						position: absolute;
+						right: 10px;
+						color: $darkgrey;
+					}
+				}
+			}
+			ul {
+				@include animated(.2s);
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				width: 100%;
+				box-shadow: 0px 1px 3px -2px #000;
+				z-index: 1;
+				li {
+					display: block;
+					background: $white;
+					width: 100%;
+					border-bottom: 1px solid $soc-border;
+					a {
+						display: block;
+						padding: 8px 0 8px 15px;
+						text-decoration: none;
+						@include font($lora, $reg, $reg, $text);
+					}
+					&:hover {
+						background: $red;
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
+			&:hover {
+				span i { color: $text; }
+			}
+			&.active {
+				z-index: 4;
+				span i {
+					color: $red;
+				}
+				ul {
+					top: 34px;
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+	
+	.recent-story-items {
+		position: relative;
+		z-index: 3;
+		@include clearfix;
+		li {
+			@include span-columns(3);
+			background: $white;
+			box-shadow: 0px 1px 3px -2px #000;
+			.story-image {
+				img { width: 100%; }
+			}
+			.story-title {
+				h3 {
+					@include font($lora, $med2, 24px, $text);
+					padding: 20px 10px;
+				}
+			}
+		}
+	}
+	.load-more.btn {
+		margin: 30px 0 0;
+		a {
+			display: block;
+			width: 100%;
+			padding: 15px 0;
+			background: $red-btn;
+			@include font($lora, $reg, $reg, $white);
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}

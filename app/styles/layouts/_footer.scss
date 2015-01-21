@@ -1,0 +1,112 @@
+footer {
+	background:  $black;
+	border-top: 20px solid $footer-border;
+	padding: 20px 0;
+	@include font($default, $small, 20px, $white);
+	a { 
+		color: #a2a1a1; 
+		text-decoration: none;
+	}
+
+	li {
+		margin-bottom: 6px;
+	}
+
+	h3 {
+		@include font($lora, $med2, 40px, $white);
+		@include clearfix;
+	}
+
+	.icon {
+		display: block;
+		margin: 0px 15px 0 0;
+		float: left;
+		font-size: $bigger;
+		& .fa-mobile {
+			font-size: 45px;
+		}
+	}
+}
+
+.stay-connected {
+	@include span-columns(3);
+	.follow-us {
+		margin-top: 80px;
+	}
+	.socmed {
+		margin: 20px 0 0;
+		.facebook, .twitter, .youtube, .google {
+			display: block;
+			padding: 10px 15px;
+			display: inline-block;
+			margin: 0 3px 0 0;
+			text-align: center;
+			a {
+				font-size: 20px;
+				color: $white;
+			}
+		}
+
+		.facebook { background: $facebook; }
+		.twitter { background: $twitter; }
+		.youtube { background: $youtube; }
+		.google { background: $google; }
+	}
+}
+
+.newsletters-and-products {
+	@include span-columns(4);
+	.newsletters, .products {
+		ul { @include clearfix; }
+		li {
+			@include span-columns(6);
+			&:nth-child(odd) {
+				@include omega();	
+			}
+		}
+	}
+	.newsletters .signup {
+		@include clearfix;
+		margin: 20px 0 0;
+		input#email, button#submit {
+			outline: none;
+			border: 0;
+			-webkit-appearance: none;
+			border-radius: 5px;
+			@include font($default, $small, $small, $text);
+		}
+		input#email {
+			background: $white;
+			padding: 7px 12px;
+			display: inline-block;
+			float: left;
+			margin: 0 8px 0 0;
+		}
+		button#submit {
+			display: block;
+			background: $red;
+			color: $white;
+			text-transform: uppercase;
+			padding: 8px 12px;
+		}
+
+	}
+	.newsletters li { color: #a2a1a1; }
+	.products { margin-top: 50px; }
+}
+
+.quicklinks-and-websites {
+	@include span-columns(5);
+	.quicklinks, .websites {
+		ul { @include clearfix; }
+		li {
+			@include span-columns(6);
+			&:nth-child(odd) {
+				@include omega();	
+			}
+		}
+	}
+	.websites { 
+		margin-top: 60px; 
+	}
+}

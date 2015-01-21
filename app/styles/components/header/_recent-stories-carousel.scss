@@ -1,5 +1,5 @@
 #recent-stories-carousel {
-    overflow: auto;
+    @include clearfix;
     border-bottom: 1px solid $lightgrey;
     background: $lightgrey;
     .wrapper {
@@ -9,6 +9,12 @@
     }
     li {
         @include span-columns(3);
+        @include max-screen($desktop) {
+            @include span-columns(4);
+            &:nth-child(3) {
+                display: none;
+            }
+        }
         border-right: 1px solid $lightgrey;
         &:last-child {
             border-right: 0;
@@ -23,9 +29,11 @@
         }
         .summary {
             @include span-columns(7);
-            font-size: $reg;
-            color: $text;
+            @include font($lora, $reg, 15px, $text);
             padding: 0 5px 0 0;
+            @include max-screen($desktop) {
+                font-size: $smallest;
+            }
         }
     }
     .prev, .next {
@@ -44,7 +52,7 @@
         left: -40px;
     }
     .next {
-        right: -50px;
+        right: -40px;
     }
 }
 

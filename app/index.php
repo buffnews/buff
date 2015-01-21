@@ -20,6 +20,8 @@
           
         </div>
 
+        <?php include(dirname(__FILE__).'/includes/components/article/recent-stories-loader.php'); ?>
+
         <?php include(dirname(__FILE__).'/includes/layouts/footer.php'); ?>
 
     </body>

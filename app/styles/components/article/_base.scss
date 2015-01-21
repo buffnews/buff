@@ -1,3 +1,8 @@
+.article-body { 
+	@include clearfix; 
+	position: relative;
+}
+
 .article-title {
 	margin: 0 0 15px;
 	h2 {
@@ -28,6 +33,10 @@
 
 .article-content {
 	@include span-columns(9);
+	@include max-screen($desktop) {
+		@include span-columns(9.75);
+		@include shift(.25);
+	}
 	p {
 		margin: 0 0 23px;
 	}

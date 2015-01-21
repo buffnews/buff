@@ -1,12 +1,12 @@
 // SASS UTILS //
 @import '../bower_components/bower-bourbon/bourbon';
 @import '../bower_components/bower-neat/neat';
+@import '../bower_components/sass-mediaqueries/media-queries';
 // END SASS UTILS //
 
 // CSS UTILS //
 @import '../bower_components/reset-scss/reset';
 // END CSS UTILS //
-
 
 // BASE //
 @import 'base/base';
@@ -16,10 +16,12 @@
 @import 'layouts/header';
 @import 'layouts/main';
 @import 'layouts/right-rail';
+@import 'layouts/footer';
 // END LAYOUTS //
 
 // COMPONENTS //
 @import 'components/header/topbar';
 @import 'components/header/recent-stories-carousel';
 @import 'components/article/article';
+@import 'components/right-rail/ads';
 // END COMPONENTS //

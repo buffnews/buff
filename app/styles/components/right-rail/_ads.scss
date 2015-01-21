@@ -1,0 +1,11 @@
+.ad {
+	display: block;
+	margin-bottom: 600px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}

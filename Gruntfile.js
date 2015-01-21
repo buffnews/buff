@@ -41,8 +41,8 @@ module.exports = function (grunt) {
         },
         watch: {
             javascript: {
-                files: ['<%= yeoman.app %>/scripts/**/*.js']
-                //tasks: ['jshint']
+                files: ['<%= yeoman.app %>/scripts/**/*.js'],
+                tasks: ['jshint']
             },
             sass: {
                 files: ['<%= yeoman.app %>/styles/**/*.{scss,sass}'],
@@ -57,11 +57,11 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    '<%= yeoman.app %>/**/*.html',
-                    '<%= yeoman.app %>/**/*.php',
-                    '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
-                    '{.tmp,<%= yeoman.app %>}/styles/**/*.css',
-                    '<%= yeoman.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
+                    '<%= yeoman.app %>/{,*/}*.html',
+                    '<%= yeoman.app %>/{,*/}*.php',
+                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
+                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
         },
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         uncss: {
             options: {
                 verbose:true,
-                ignore: [/dropdown-menu/,/\.collapsing/,/\.collapse/] // ignore css selectors for async content with complete selector or regexp
+                ignore: [/\.fixed-socmed/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/] // ignore css selectors for async content with complete selector or regexp
             },
             main: {
                 files: {
@@ -173,6 +173,23 @@ module.exports = function (grunt) {
                 rjsConfig: '<%= yeoman.app %>/scripts/config.js'
             }
         },
+        requirejs: {
+            all: {
+                // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
+                options: {
+                    baseUrl                 : '<%= yeoman.app %>/bower_components',
+                    name                    : 'almond/almond',
+                    include                 : 'main',
+                    out                     : '<%= yeoman.dist %>/scripts/main.js',
+                    mainConfigFile          : '<%= yeoman.app %>/scripts/config.js',
+                    preserveLicenseComments : false,
+                    useStrict               : true,
+                    wrap                    : true,
+                    optimize                : 'uglify2',
+                    generateSourceMaps      : false
+                }
+            }
+        },
         modernizr: {
             dist: {
                 // [REQUIRED] Path to the build you're using for development.
@@ -240,7 +257,7 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>',
                 flow: {
                     html: {
-                        steps: { 'js': ['concat'], 'css': ['concat']},
+                        steps: { 'js': ['concat', 'uglifyjs'], 'css': []},
                         post: {}
                     }
                 }
@@ -253,7 +270,7 @@ module.exports = function (grunt) {
                 assetsDirs: ['<%= yeoman.dist %>']
             },
             html: ['<%= yeoman.dist %>/**/*.html'],
-            css: ['<%= yeoman.dist %>/styles/**/*.css']
+            css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
         imagemin: {
             dist: {
@@ -490,8 +507,6 @@ module.exports = function (grunt) {
         // testserver
         grunt.task.run(['clean:server', 'connect:test']);
 
-
-
         // mocha
         grunt.task.run(['mocha']);
 
@@ -510,15 +525,16 @@ module.exports = function (grunt) {
         'uncss',
         'autoprefixer',
         'concat',
-        //'modernizr',
-        //'uglify',
+        'requirejs',
+        'modernizr',
+        'uglify',
         'copy:dist',
         'uglify',
         'cssmin:dist',
         'rev',
         'usemin',
-        'prettify'
-        //'htmlmin'
+        'prettify',
+        'htmlmin'
     ]);
 
     grunt.registerTask('report', [

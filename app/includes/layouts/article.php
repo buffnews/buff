@@ -1,5 +1,5 @@
 <div id="main">
-	<article>
+	<article class="article-body">
 		<div class="article-title">
 			<h2>In Buffalo School Board debut, Ogilvie vows to shift focus to the classroom</h2>
 		</div>
@@ -59,10 +59,9 @@
 			
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum blanditiis doloremque, natus perspiciatis soluta error fugit ad nihil placeat expedita, iusto, beatae. Tempora cum ad corporis, harum cupiditate eligendi.</p>
 
-				<div id="disqus">
-					<h2>Disqus here</h2>
-				</div>
 			</div>
 		</div>
+
 	</article>
+
 </div>

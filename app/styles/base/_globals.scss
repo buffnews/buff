@@ -6,9 +6,10 @@ body {
 header + .wrapper {
 	padding-top: 150px;
 }
+
 .wrapper {
 	max-width: 1260px;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	@include clearfix;
 }
