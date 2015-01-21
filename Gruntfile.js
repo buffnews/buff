@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         uncss: {
             options: {
                 verbose:true,
-                ignore: [/\.fixed-socmed/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/] // ignore css selectors for async content with complete selector or regexp
+                ignore: [/\.fixed-socmed/, /\.freeze/, /\.active/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/] // ignore css selectors for async content with complete selector or regexp
             },
             main: {
                 files: {
