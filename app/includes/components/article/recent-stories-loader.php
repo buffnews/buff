@@ -42,7 +42,7 @@
 		<ul class="recent-story-items">
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+					<img src="/images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -52,7 +52,7 @@
 
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+					<img src="/images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -62,7 +62,7 @@
 			
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+					<img src="/images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -72,7 +72,7 @@
 			
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+					<img src="/images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
