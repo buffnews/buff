@@ -95,6 +95,13 @@
 		@include clearfix;
 		li {
 			@include span-columns(3);
+			@include max-screen($tablet) {
+				@include span-columns(6);
+				margin-bottom: 20px;
+				&:nth-child(2n) {
+					@include omega();
+				}
+			}
 			background: $white;
 			box-shadow: 0px 1px 3px -2px #000;
 			.story-image {

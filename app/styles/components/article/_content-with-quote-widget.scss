@@ -1,5 +1,8 @@
 .content-with-quote-widget {
 	width: 123%;
+	@include max-screen($tablet) {
+		width: 100%;
+	}
 	@include clearfix;
 	.content {
 		@include span-columns(7);

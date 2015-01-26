@@ -3,11 +3,13 @@
 	@include animated(.2s);
 	top: 0;
 	width: 57px;
-	border-top: 5px solid $soc-border;
-	border-bottom: 5px solid $soc-border;
 	@include max-screen($desktop) {
 		@include span-columns(2);
 		max-width: 57px;
+	}
+	@include max-screen($tablet) {
+		@include span-columns(1.5);
+		max-width: 100%;
 	}
 	&.sticky {
 		position: fixed;
@@ -28,7 +30,9 @@
 		padding: 12px 0;
 		font-size: 20px;
 		cursor: pointer;
-		
+		@include max-screen($tablet) {
+			max-width: 57px;
+		}
 		&.mail { color: $mail; }
 		&.facebook { color: $facebook; }
 		&.twitter { color: $twitter; }
@@ -36,6 +40,13 @@
 		&.reddit { color: $reddit; }
 		&.linkedin { color: $linkedin; }
 
+		&:first-child {
+			border-top: 5px solid $soc-border;
+		}
+		&:last-child {
+			border-bottom: 5px solid $soc-border;
+		}
+		
 		&:last-child {
 			line-height: 25px;
 		}

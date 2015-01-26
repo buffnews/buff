@@ -73,7 +73,7 @@ module.exports = function (grunt) {
         sass: {
             all: {
                 options: {
-                    sourceMap: true
+                    sourceMap: false
                 },
                 files: {
                     '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.scss'

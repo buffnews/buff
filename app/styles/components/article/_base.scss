@@ -31,16 +31,28 @@
 	}
 }
 
+.article-content-container {
+	@include clearfix;
+}
+
 .article-content {
 	@include span-columns(9);
 	@include max-screen($desktop) {
 		@include span-columns(9.75);
 		@include shift(.25);
 	}
+	@include max-screen($tablet) {
+		@include span-columns(10.5);
+		@include shift(0);
+	}
 	p {
 		margin: 0 0 23px;
 	}
 	&.fixed-socmed {
 		margin-left: 78px;
+		@include max-screen($tablet) {
+			@include span-columns(10.5);
+			@include shift(1.5);
+		}
 	}
 }
