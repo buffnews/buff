@@ -1,6 +1,8 @@
 #right-rail {
-	@include span-columns(3);
-	@include shift(.2);
+	@include span-columns(3.8);
+	@include max-screen(1100px) {
+		@include span-columns(4.8);
+	}
 	@include max-screen($tablet) {
 		display: none;
 	}

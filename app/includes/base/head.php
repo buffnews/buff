@@ -12,7 +12,7 @@
 
 <script type="text/javascript" src="vendor/scripts/fontsmoothie.min.js" async></script>
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
 
 <!-- build:css styles/main.css -->
 <link rel="stylesheet" href="styles/main.css">
