@@ -42,7 +42,7 @@
 		<ul class="recent-story-items">
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="/images/interstellar.jpg">
+					<img src="images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -52,7 +52,7 @@
 
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="/images/interstellar.jpg">
+					<img src="images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -62,7 +62,7 @@
 			
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="/images/interstellar.jpg">
+					<img src="images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
@@ -72,7 +72,7 @@
 			
 			<li class="recent-story-item">
 				<div class="story-image">
-					<img src="/images/interstellar.jpg">
+					<img src="images/interstellar.jpg">
 				</div>
 
 				<div class="story-title">
