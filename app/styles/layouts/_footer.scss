@@ -34,10 +34,24 @@ footer {
 .stay-connected {
 	@include span-columns(3);
 	@include max-screen($tablet) {
-		display: none;
+		@include span-columns(12);
+		margin-bottom: 30px;
+	}
+	.subscribe, .follow-us {
+		@include max-screen($tablet) {
+			@include span-columns(6);
+		}
+		@include max-screen($mobileBig) {
+			@include span-columns(12);
+		}
 	}
 	.follow-us {
-		margin-top: 80px;
+		@include min-screen($desktop) {
+			margin-top: 80px;
+		}
+		@include max-screen($mobileBig) {
+			margin-top: 30px;
+		}
 	}
 	.socmed {
 		margin: 20px 0 0;
@@ -63,9 +77,16 @@ footer {
 .newsletters-and-products {
 	@include span-columns(4);
 	@include max-screen($tablet) {
-		display: none;
+		@include span-columns(12);
+		margin-bottom: 30px;
 	}
 	.newsletters, .products {
+		@include max-screen($tablet) {
+			@include span-columns(6);
+		}
+		@include max-screen($mobileBig) {
+			@include span-columns(12);
+		}
 		ul { @include clearfix; }
 		li {
 			@include span-columns(6);
@@ -89,7 +110,7 @@ footer {
 			padding: 7px 12px;
 			display: inline-block;
 			float: left;
-			margin: 0 8px 0 0;
+			margin: 0 8px 10px 0;
 		}
 		button#submit {
 			display: block;
@@ -101,7 +122,15 @@ footer {
 
 	}
 	.newsletters li { color: #a2a1a1; }
-	.products { margin-top: 50px; }
+	.products { 
+		@include min-screen($desktop) {
+			margin-top: 50px; 
+		}
+
+		@include max-screen($mobileBig) {
+			margin-top: 30px;
+		}
+	}
 }
 
 .quicklinks-and-websites {
@@ -112,14 +141,18 @@ footer {
 	.quicklinks, .websites {
 		@include max-screen($tablet) {
 			@include span-columns(6);
-			border-right: 1px solid #2f2e2e;
-			&:first-child {
+
+			@include min-screen($tablet) {
+				border-right: 1px solid #2f2e2e;
+				&:last-child {
+					@include shift(.5);
+					@include span-columns(5.5);
+					border: 0;
+				}
 			}
-			&:last-child {
-				@include shift(.5);
-				@include span-columns(5.5);
-				border: 0;
-			}
+		}
+		@include max-screen($mobileBig) {
+			@include span-columns(12);
 		}
 		ul { @include clearfix; }
 		li {
@@ -130,9 +163,11 @@ footer {
 		}
 	}
 	.websites { 
-		margin-top: 60px; 
-		@include max-screen($tablet) {
-			margin-top: 0;
+		@include min-screen($desktop) {
+			margin-top: 60px; 
+		}
+		@include max-screen($mobileBig) {
+			margin-top: 30px;
 		}
 	}
 }

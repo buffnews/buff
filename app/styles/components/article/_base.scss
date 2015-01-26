@@ -7,6 +7,10 @@
 	margin: 0 0 15px;
 	h2 {
 		@include font($miller-bold, $biggest, 50px, $black);
+		@include max-screen($mobile) {
+			font-size: $bigger;
+			line-height: $bigger;
+		}
 	}
 }
 
@@ -45,14 +49,19 @@
 		@include span-columns(10.5);
 		@include shift(0);
 	}
+	@include max-screen($mobileBig) {
+		@include span-columns(12);
+	}
 	p {
 		margin: 0 0 23px;
 	}
-	&.fixed-socmed {
-		margin-left: 78px;
-		@include max-screen($tablet) {
-			@include span-columns(10.5);
-			@include shift(1.5);
+	@include min-screen($mobileBig) {
+		&.fixed-socmed {
+			margin-left: 78px;
+			@include max-screen($tablet) {
+				@include span-columns(10.5);
+				@include shift(1.5);
+			}
 		}
 	}
 }

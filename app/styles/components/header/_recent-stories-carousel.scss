@@ -2,6 +2,9 @@
     @include clearfix;
     border-bottom: 1px solid $lightgrey;
     background: $lightgrey;
+    @include max-screen($mobile) {
+        display: none;
+    }
     .wrapper {
         background: $white;
         padding: 15px;
@@ -50,9 +53,15 @@
     }
     .prev {
         left: -40px;
+        @include max-screen($tablet) {
+            left: -30px;
+        }
     }
     .next {
         right: -40px;
+        @include max-screen($tablet) {
+            right: -30px;
+        }
     }
 }
 

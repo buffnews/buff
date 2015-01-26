@@ -10,9 +10,15 @@
 		}
 		.author-name {
 			@include font($default, $med, 25px, $listitem);
+			@include max-screen($tablet) {
+				font-size: $smaller;
+			}
 			.name {
 				margin-right: 20px;
 				color: $black;
+				@include max-screen($tablet) {
+					margin-right: 0;
+				}
 			}
 		}
 		.connect {
@@ -27,6 +33,10 @@
 		&.updated {
 			@include font($default, $smaller, 20px, $listitem);
 			margin: 0 0 0 15px;
+			@include max-screen($tablet) {
+				font-size: $smallest;
+				margin: 0;
+			}
 		}
 	}
 }

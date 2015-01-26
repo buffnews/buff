@@ -4,7 +4,11 @@ body {
 }
 
 header + .wrapper {
-	padding-top: 150px;
+	padding-top: 20px;
+	
+	@include min-screen($tablet) {
+		padding-top: 150px;
+	}
 }
 
 .wrapper {

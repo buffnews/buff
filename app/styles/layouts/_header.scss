@@ -1,5 +1,8 @@
 header {
-    position: fixed;
     width: 100%;
-    z-index: 5;
+
+	@include min-screen($tablet) {
+	    position: fixed;
+	    z-index: 5;
+	}
 }

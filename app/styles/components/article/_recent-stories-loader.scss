@@ -102,15 +102,37 @@
 					@include omega();
 				}
 			}
+			@include max-screen($mobile) {
+				@include span-columns(12);
+			}
 			background: $white;
 			box-shadow: 0px 1px 3px -2px #000;
 			.story-image {
 				img { width: 100%; }
+				@include max-screen($mobile) {
+					float: left;
+					width: 50%;
+					position: relative;
+					overflow: hidden;
+					img {
+						width: 130%;
+						display: block;
+					}
+				}
 			}
 			.story-title {
 				h3 {
 					@include font($lora, $med2, 24px, $text);
 					padding: 20px 10px;
+				}
+				@include max-screen($mobile) {
+					float: left;
+					width: 50%;
+					h3 {
+						font-size: $smallest;
+						line-height: $smaller;
+
+					}
 				}
 			}
 		}
