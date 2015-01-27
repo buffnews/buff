@@ -83,7 +83,8 @@ module.exports = function (grunt) {
         uncss: {
             options: {
                 verbose:true,
-                ignore: [/\.fixed-socmed/, /\.freeze/, /\.active/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/] // ignore css selectors for async content with complete selector or regexp
+                ignore: [/font-awesome/, /\.fixed-socmed/, /\.freeze/, /\.active/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/],
+                ignoreSheets : [/font-awesome/]
             },
             main: {
                 files: {
@@ -220,14 +221,14 @@ module.exports = function (grunt) {
                 },
 
                 // By default, source is uglified before saving
-                'uglify': true,
+                'uglify': false,
 
                 // Define any tests you want to implicitly include.
                 'tests': [],
 
                 // By default, this task will crawl your project for references to Modernizr tests.
                 // Set to false to disable.
-                'parseFiles': true,
+                'parseFiles': false,
 
                 // When parseFiles = true, this task will crawl all *.js, *.css, *.scss files, except files that are in node_modules/.
                 // You can override this by defining a 'files' array below.
@@ -257,7 +258,7 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>',
                 flow: {
                     html: {
-                        steps: { 'js': ['concat', 'uglifyjs'], 'css': []},
+                        steps: { 'js': ['concat', 'uglifyjs'], 'css': ['cssmin']},
                         post: {}
                     }
                 }
@@ -353,7 +354,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/*'
+                        'fonts/*'
                     ]
                 }, {
                     expand: true,

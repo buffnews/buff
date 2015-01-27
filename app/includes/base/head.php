@@ -10,10 +10,10 @@
 <script src="bower_components/modernizr/modernizr.js"></script>
 <!-- endbuild -->
 
-<script type="text/javascript" src="vendor/scripts/fontsmoothie.min.js" async></script>
-
-<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
-
 <!-- build:css styles/main.css -->
 <link rel="stylesheet" href="styles/main.css">
 <!-- endbuild -->
+
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="vendor/scripts/fontsmoothie.min.js" async></script>
