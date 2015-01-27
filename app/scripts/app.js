@@ -11,6 +11,7 @@ define(function (require) {
 
     components.fixSocMedUtil = require('component/fixSocMedUtil');
     components.dropdown = require('component/dropdown');
+    components.facebook = require('component/facebook');
 
     // API methods
     $.extend(self, {
