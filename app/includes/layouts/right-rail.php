@@ -1,4 +1,4 @@
-<div id="right-rail">
+<div class="right-rail">
 	
 	<div class="ad square-ad">
 		<img src="images/square-ad.jpg" alt="">

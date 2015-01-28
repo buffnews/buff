@@ -7,11 +7,20 @@ var require = {
         component: '../scripts/component',
         library: '../scripts/library',
         jquery: 'jquery/dist/jquery',
+        slick: 'slick-carousel/slick/slick',
         loglevel: 'loglevel/dist/loglevel.min',
-        picturefill: 'picturefill/dist/picturefill'
+        picturefill: 'picturefill/dist/picturefill',
+        'slick-carousel': 'slick-carousel/slick/slick.min'
     },
     shim: {
-
+        slick: {
+            deps: [
+                'jquery'
+            ],
+            exports: [
+                'slick'
+            ]
+        }
     },
     packages: [
         {

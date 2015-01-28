@@ -1,4 +1,4 @@
-#main {
+.main {
 	@include span-columns(8.2);
 	@include max-screen(1100px) {
 		@include span-columns(7.2);

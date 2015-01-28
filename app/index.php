@@ -24,7 +24,7 @@
 
         <?php include(dirname(__FILE__).'/includes/components/article/recent-stories-loader.php'); ?>
 
-        <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="20" data-colorscheme="light"></div>
+        <?php include(dirname(__FILE__).'/includes/components/article/comments.php'); ?>
 
         <?php include(dirname(__FILE__).'/includes/layouts/footer.php'); ?>
 

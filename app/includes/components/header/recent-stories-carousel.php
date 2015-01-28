@@ -1,6 +1,42 @@
 <div id="recent-stories-carousel">
 	<div class="wrapper">
-		<ul>
+		<ul class="items-to-scroll">
+			<li>
+				<div class="img-container">
+					<img src="images/top-story-cycle-image.png" alt="">
+				</div>
+				<div class="summary">
+					<p>Buffalo School Board OKs hiring of to review district</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="img-container">
+					<img src="images/top-story-cycle-image.png" alt="">
+				</div>
+				<div class="summary">
+					<p>Buffalo School Board OKs hiring of to review district</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="img-container">
+					<img src="images/top-story-cycle-image.png" alt="">
+				</div>
+				<div class="summary">
+					<p>Buffalo School Board OKs hiring of to review district</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="img-container">
+					<img src="images/top-story-cycle-image.png" alt="">
+				</div>
+				<div class="summary">
+					<p>Buffalo School Board OKs hiring of to review district</p>
+				</div>
+			</li>
+
 			<li>
 				<div class="img-container">
 					<img src="images/top-story-cycle-image.png" alt="">

@@ -10,8 +10,10 @@ define(function (require) {
 
 
     components.fixSocMedUtil = require('component/fixSocMedUtil');
+    components.carousel = require('component/carousel');
     components.dropdown = require('component/dropdown');
     components.facebook = require('component/facebook');
+    components.commentCountButton = require('component/commentCountButton');
 
     // API methods
     $.extend(self, {

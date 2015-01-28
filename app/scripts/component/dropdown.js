@@ -1,10 +1,3 @@
-/**
- * JS Module Definition
- *
- * @author Ben Zörb @bezoerb https://github.com/bezoerb
- * @copyright    Copyright (c) 2014 ben
- * All rights reserved.
- */
 define(['require', 'jquery'],function (require, $) {
     'use strict';
 

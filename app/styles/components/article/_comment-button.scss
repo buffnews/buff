@@ -1,0 +1,26 @@
+.comment-count-button {
+	display: block;
+	cursor: pointer;
+	background: $block-bg;
+	border: 1px solid $lightgrey;
+	border-radius: 4px;
+	text-align: center;
+	.message {
+		padding: 10px;
+	}
+	.number {
+		display: none;
+	}
+	.alert {
+		color: $red;
+	}
+	.fa {
+		color: $darkgrey;
+		font-size: 25px;
+		padding-right: 10px;
+	}
+	p {
+		margin: 0;
+		@include font($lora, $med2, $bigger, $text);
+	}
+}

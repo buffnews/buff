@@ -2,9 +2,15 @@
     @include clearfix;
     border-bottom: 1px solid $lightgrey;
     background: $lightgrey;
+    height: 105px;
+    overflow: hidden;
     @include max-screen($mobile) {
         display: none;
     }
+
+    //override margin on slick carousel
+    .slick-slider { margin-bottom: 0; }
+
     .wrapper {
         background: $white;
         padding: 15px;
@@ -12,16 +18,28 @@
     }
     li {
         @include span-columns(3);
+        margin-right: 10px;
+        padding-left: 10px;
         @include max-screen($desktop) {
             @include span-columns(4);
+            margin-right: 0;
             &:nth-child(3) {
                 display: none;
             }
         }
         border-right: 1px solid $lightgrey;
-        &:last-child {
+        &:nth-child(4n) {
             border-right: 0;
         }
+
+        @include max-screen($mobileBig) {
+            & { border-right: 0; }
+            &:nth-child(even) {
+                border-right: 1px solid $lightgrey;
+                border-left: 0;
+            }
+        }
+
         .img-container {
             @include span-columns(5);
             height: 78px;

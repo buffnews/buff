@@ -15,7 +15,7 @@ define(['require', 'jquery'],function (require, $) {
             //store the element
             var socMed = $('.socmed-util'),
                 article = $('.article-content'),
-                main = $('#main'),
+                main = $('.main'),
                 vTop = socMed.offset().top;
 
             var length = main.height() - socMed.height();

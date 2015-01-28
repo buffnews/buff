@@ -1,4 +1,4 @@
-<div id="main">
+<div class="main">
 	<article class="article-body">
 		<div class="article-title">
 			<h2>In Buffalo School Board debut, Ogilvie vows to shift focus to the classroom</h2>
@@ -59,9 +59,17 @@
 			
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum blanditiis doloremque, natus perspiciatis soluta error fugit ad nihil placeat expedita, iusto, beatae. Tempora cum ad corporis, harum cupiditate eligendi.</p>
 
-			</div>
-		</div>
+		       	<div class="comment-count-button">
+		       		<div class="message">
+		       			<span class="number">
+		       				<fb:comments-count href="http://developers.facebook.com/docs/plugins/comments/"></fb:comments-count>
+		       			</span>
+		       		</div>
+		       	</div>
 
+			</div>
+	
+		</div>
 	</article>
 
 </div>

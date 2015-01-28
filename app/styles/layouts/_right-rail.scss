@@ -1,4 +1,4 @@
-#right-rail {
+.right-rail {
 	@include span-columns(3.8);
 	@include max-screen(1100px) {
 		@include span-columns(4.8);
