@@ -9,13 +9,17 @@
 			display: inline-block;
 		}
 		.author-name {
-			@include font($default, $med, 25px, $listitem);
+			@include font($lora, $med, 25px, $listitem);
+			font-style: italic;
 			@include max-screen($tablet) {
 				font-size: $smaller;
 			}
 			.name {
+				@include font($lora-bold-i, $med, 25px, $listitem);
 				margin-right: 20px;
 				color: $black;
+				font-weight: 900;
+				font-style: italic;
 				@include max-screen($tablet) {
 					margin-right: 0;
 				}
@@ -31,7 +35,8 @@
 			}
 		}
 		&.updated {
-			@include font($default, $smaller, 20px, $listitem);
+			@include font($lora, $smaller, 20px, $listitem);
+			font-style: italic;
 			margin: 0 0 0 15px;
 			@include max-screen($tablet) {
 				font-size: $smallest;

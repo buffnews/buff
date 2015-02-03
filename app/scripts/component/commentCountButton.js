@@ -1,4 +1,3 @@
-/* jshint ignore:start */
 define(['require', 'jquery'],function (require, $) {
     'use strict';
 
@@ -15,7 +14,7 @@ define(['require', 'jquery'],function (require, $) {
                 noComments: '<p>There are currently no comments. Add yours now!</p>'
             };
 
-            var message = (function() {
+            (function() {
                 if (els.count !== '0') {
                     els.message.append(messages.isComments);
                 } else {
@@ -29,7 +28,7 @@ define(['require', 'jquery'],function (require, $) {
             var els = {
                 doc: $('html,body'),
                 wall: $('#comment-wall')
-            }
+            };
 
             $(els.doc).animate({
                scrollTop: $(els.wall).offset().top - 120
@@ -60,4 +59,3 @@ define(['require', 'jquery'],function (require, $) {
             }
         };
 });
-/* jshint ignore:end */

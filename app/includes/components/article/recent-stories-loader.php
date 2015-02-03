@@ -39,46 +39,12 @@
 			</div>
 		</div>
 
+		<ul class="rev-items">
+
+		</ul>
+
 		<ul class="recent-story-items">
-			<li class="recent-story-item">
-				<div class="story-image">
-					<img src="images/interstellar.jpg">
-				</div>
 
-				<div class="story-title">
-					<h3>‘Interstellar’ is half a great movie – the other half? Not so much</h3>
-				</div>
-			</li>
-
-			<li class="recent-story-item">
-				<div class="story-image">
-					<img src="images/interstellar.jpg">
-				</div>
-
-				<div class="story-title">
-					<h3>‘Interstellar’ is half a great movie – the other half? Not so much</h3>					
-				</div>
-			</li>
-			
-			<li class="recent-story-item">
-				<div class="story-image">
-					<img src="images/interstellar.jpg">
-				</div>
-
-				<div class="story-title">
-					<h3>‘Interstellar’ is half a great movie – the other half? Not so much</h3>
-				</div>
-			</li>
-			
-			<li class="recent-story-item">
-				<div class="story-image">
-					<img src="images/interstellar.jpg">
-				</div>
-
-				<div class="story-title">
-					<h3>‘Interstellar’ is half a great movie – the other half? Not so much</h3>
-				</div>
-			</li>
 		</ul>
 
 		<div class="load-more btn">

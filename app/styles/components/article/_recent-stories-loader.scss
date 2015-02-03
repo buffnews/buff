@@ -88,13 +88,24 @@
 		}
 
 	}
-	
+
+	.rev-items {
+		@include span-columns(6);
+	}
 	.recent-story-items {
+		@include span-columns(6);
+		@include omega();
+	}	
+	.recent-story-items, .rev-items {
 		position: relative;
 		z-index: 3;
 		@include clearfix;
 		li {
-			@include span-columns(3);
+			@include span-columns(6);
+			margin-bottom: 15px;
+			&:nth-child(2n) {
+				@include omega();
+			}
 			@include max-screen($tablet) {
 				@include span-columns(6);
 				margin-bottom: 20px;
@@ -108,6 +119,9 @@
 			background: $white;
 			box-shadow: 0px 1px 3px -2px #000;
 			.story-image {
+				max-height: 173px;
+				min-height: 173px;
+				overflow: hidden;
 				img { width: 100%; }
 				@include max-screen($mobile) {
 					float: left;
@@ -121,9 +135,12 @@
 				}
 			}
 			.story-title {
+				padding-bottom: 20px;
 				h3 {
 					@include font($lora, $med2, 24px, $text);
 					padding: 20px 10px;
+					height: 67px;
+					overflow: hidden;
 				}
 				@include max-screen($mobile) {
 					float: left;
@@ -139,6 +156,7 @@
 	}
 	.load-more.btn {
 		margin: 30px 0 0;
+		clear: both;
 		a {
 			display: block;
 			width: 100%;

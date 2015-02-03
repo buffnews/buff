@@ -14,6 +14,7 @@ define(function (require) {
     components.dropdown = require('component/dropdown');
     components.facebook = require('component/facebook');
     components.commentCountButton = require('component/commentCountButton');
+    components.loadArticles = require('component/load-articles/articles');
 
     // API methods
     $.extend(self, {

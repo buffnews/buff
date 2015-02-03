@@ -23,15 +23,18 @@
 	img { width: 100%; }
 	.article-image-caption {
 		border-bottom: 1px solid $rule;
-		@include font($default, $smaller, 20px, $caption);
+		@include font($lora, $smaller, 20px, $caption);
 		& > * { margin-bottom: 10px; }
 	}
 }
 
 .article-image-main-caption {
 	margin: 5px 0 10px;
+	@include max-screen($mobileBig) {
+		display: none;
+	}
 	h3 {
-		@include font(Arial, $small, 20px, $caption);
+		@include font($lora, $small, 20px, $caption);
 	}
 }
 
