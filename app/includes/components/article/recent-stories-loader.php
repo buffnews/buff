@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="recent-story-items">
-			<h2></h2>
+			<h2>Recent Stories.</h2>
 			<ul>
 
 			</ul>
