@@ -39,13 +39,20 @@
 			</div>
 		</div>
 
-		<ul class="rev-items">
 
-		</ul>
+		<div class="rev-items">
+			<h2>Around the web.</h2>
+			<ul>
 
-		<ul class="recent-story-items">
+			</ul>
+		</div>
 
-		</ul>
+		<div class="recent-story-items">
+			<h2></h2>
+			<ul>
+
+			</ul>
+		</div>
 
 		<div class="load-more btn">
 			<a href="#">Load more</a>
