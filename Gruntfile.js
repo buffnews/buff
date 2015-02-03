@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         uncss: {
             options: {
                 verbose:true,
-                ignore: [/font-awesome/, /slick/, /\.fixed-socmed/, /\.freeze/, /\.active/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/],
+                ignore: [/li/, /font-awesome/, /slick/, /\.fixed-socmed/, /\.freeze/, /\.active/, /\.sticky/, /dropdown-menu/,/\.collapsing/,/\.collapse/],
                 ignoreSheets : [/font-awesome/]
             },
             main: {
