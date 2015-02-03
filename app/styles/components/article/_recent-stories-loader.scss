@@ -86,7 +86,6 @@
 				}
 			}
 		}
-
 	}
 
 	.rev-items {
@@ -100,6 +99,9 @@
 		position: relative;
 		z-index: 3;
 		@include clearfix;
+		h3 {
+			margin: 0 0 10px;
+		}
 		li {
 			@include span-columns(6);
 			margin-bottom: 15px;

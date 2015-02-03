@@ -41,14 +41,14 @@
 
 
 		<div class="rev-items">
-			<h2>Around the web.</h2>
+			<h3>Around the web.</h3>
 			<ul>
 
 			</ul>
 		</div>
 
 		<div class="recent-story-items">
-			<h2>Recent Stories.</h2>
+			<h3>Recent Stories.</h3>
 			<ul>
 
 			</ul>
