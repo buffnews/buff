@@ -1,4 +1,4 @@
-# buff
+# buffalo news
 
 Everything you'll need is in the /dist directory. 
 
