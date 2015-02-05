@@ -186,7 +186,7 @@ module.exports = function (grunt) {
                     preserveLicenseComments : false,
                     useStrict               : true,
                     wrap                    : true,
-                    optimize                : 'uglify2',
+                    optimize                : 'none',
                     generateSourceMaps      : false
                 }
             }
