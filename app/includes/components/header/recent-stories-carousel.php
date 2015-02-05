@@ -6,7 +6,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -15,7 +15,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -24,7 +24,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -33,7 +33,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -42,7 +42,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -51,7 +51,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -60,7 +60,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 
@@ -69,7 +69,7 @@
 					<img src="images/top-story-cycle-image.png" alt="">
 				</div>
 				<div class="summary">
-					<p>Buffalo School Board OKs hiring of to review district</p>
+					<a href="#">Buffalo School Board OKs hiring of to review district</a>
 				</div>
 			</li>
 		</ul>

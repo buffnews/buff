@@ -52,6 +52,10 @@
             @include span-columns(7);
             @include font($lora, $reg, 15px, $text);
             padding: 0 5px 0 0;
+            a {
+                color: $text;
+                text-decoration: none;
+            }
             @include max-screen($desktop) {
                 font-size: $smallest;
             }

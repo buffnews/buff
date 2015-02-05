@@ -2,7 +2,7 @@
 			<ul>
 				<li class="author">
 					<div class="author-name">
-						By <span class="name">Mark Gaughan</span>
+						By <a href="#"><span class="name">Mark Gaughan</span></a>
 					</div>
 					<div class="connect">
 						<a href="#"><span class="fa fa-envelope"></span></a>
@@ -12,7 +12,7 @@
 
 				<li class="author">
 					<div class="author-name">
-						By <span class="name">Mark Gaughan</span>
+						By <a href="#"><span class="name">Mark Gaughan</span></a>
 					</div>
 					<div class="connect">
 						<a href="#"><span class="fa fa-envelope"></span></a>

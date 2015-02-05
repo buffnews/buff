@@ -14,6 +14,9 @@
 			@include max-screen($tablet) {
 				font-size: $smaller;
 			}
+			a {
+				text-decoration: none;
+			}
 			.name {
 				@include font($lora-bold-i, $med, 25px, $listitem);
 				margin-right: 20px;

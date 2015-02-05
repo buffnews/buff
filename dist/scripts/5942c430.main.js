@@ -12007,7 +12007,11 @@ define('component/load-articles/articles',['require', 'jquery'],function (requir
 
         return {
             init: function(){
-                getData('http://api.revcontent.com/v1/content/?key=706864a76525e1129a673f1ad4ec5dd5e26&pub_id=7068&source=17801&type=json&doc_offset=0&userip=71.100.99.99&ad_count=50', '.rev-items ul', 'rev');
+                if ( $(window).width() > 700 ) {
+                    getData('http://api.revcontent.com/v1/content/?key=706864a76525e1129a673f1ad4ec5dd5e26&pub_id=7068&source=17801&type=json&doc_offset=0&userip=71.100.99.99&ad_count=50', '.rev-items ul', 'rev');
+                } else {
+                    getData('http://api.revcontent.com/v1/content/?key=706864a76525e1129a673f1ad4ec5dd5e26&pub_id=7068&source=17802&type=json&doc_offset=0&userip=71.100.99.99&ad_count=50', '.rev-items ul', 'rev');                    
+                }
                 getData('json/articles.json', '.recent-story-items ul', 'news');
             }
         };
