@@ -50,7 +50,7 @@ define(['require', 'jquery'],function (require, $) {
         return {
             init: function(){
                 getData('http://api.revcontent.com/v1/content/?key=706864a76525e1129a673f1ad4ec5dd5e26&pub_id=7068&source=17801&type=json&doc_offset=0&userip=71.100.99.99&ad_count=50', '.rev-items ul', 'rev');
-                getData('scripts/component/load-articles/articles.json', '.recent-story-items ul', 'news');
+                getData('json/articles.json', '.recent-story-items ul', 'news');
             }
         };
 });
