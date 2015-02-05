@@ -18,7 +18,7 @@
 							
 
 							<ul class="related-stories">
-								<li class="featured">
+								<li class="featured" data-type="article">
 									<div class="img-container">
 										<img src="images/article-related-image.jpg" alt="">
 									</div>
@@ -26,11 +26,11 @@
 									<h4>New Board looks to Ogilive to reset  district's course</h4>	
 								</li>
 
-								<li><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
+								<li data-type="gallery"><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
 
-								<li><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
+								<li data-type="video"><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
 
-								<li><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
+								<li data-type="article"><a href="#">Lorem ipsum dolor sit amet, consectetur adip.</a> </li>
 							</ul>
 
 						</div>

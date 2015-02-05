@@ -26,6 +26,9 @@
 		}
 		.wrapper {
 			padding: 20px;
+			@include max-screen($tablet) {
+				padding: 20px 0;
+			}
 		}
 		h3 {
 			@include font($lora-bold, $big, 20px, $black);
@@ -35,6 +38,13 @@
 			margin: 0 0 10px;
 			@include max-screen($desktop) {
 				margin: 20px 0;
+			}
+			@include max-screen($tablet) {
+				list-style-type: square;
+				margin: 0 0 5px 18px;
+				padding: 0 0 10px;
+				border-bottom: 1px solid $soc-border;
+				color: $red;	
 			}
 			img {
 				width: 100%;

@@ -29,6 +29,9 @@
 		border-bottom: 1px solid $rule;
 		@include font($lora, $smaller, 20px, $caption);
 		& > * { margin-bottom: 10px; }
+		@include max-screen($mobile) {
+			display: none;
+		}
 	}
 }
 
