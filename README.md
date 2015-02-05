@@ -1,6 +1,6 @@
 # buffalo news
 
-Everything you'll need is in the /dist directory. 
+Everything you'll need is in the /app directory. 
 
 If you need help figuring out what is what within the HTML, you can look in the app directory in the includes folder. You should even be able to use most of this as I'm told Saxotech is very modular as is. 
 

@@ -76,7 +76,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
+                    '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
                 }
             }
         },
