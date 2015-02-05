@@ -39,16 +39,15 @@
 			</div>
 		</div>
 
-
-		<div class="rev-items">
-			<h3>Around the web.</h3>
+		<div class="recent-story-items">
+			<h3>Recent Stories.</h3>
 			<ul>
 
 			</ul>
 		</div>
 
-		<div class="recent-story-items">
-			<h3>Recent Stories.</h3>
+		<div class="rev-items">
+			<h3>Around the web.</h3>
 			<ul>
 
 			</ul>
